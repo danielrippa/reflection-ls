@@ -20,6 +20,8 @@
             | void => 'void'
             | null => 'null'
 
+            else tag
+
         | 'Number' =>
 
           match value
