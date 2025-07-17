@@ -2,7 +2,7 @@
   do ->
 
     { value-type-tag, value-type-name } = dependency 'reflection.TypeName'
-    { single-quotes, angle-brackets, curly-brackets, square-brackets, circumfix } = dependency 'unsafe.Circumfix'
+    { single-quotes, angle-brackets, curly-brackets, square-brackets, round-brackets, circumfix } = dependency 'unsafe.Circumfix'
     { map-array-items: map, array-size } = dependency 'unsafe.Array'
     { object-member-pairs } = dependency 'unsafe.Object'
     { kebab-case } = dependency 'unsafe.StringCase'

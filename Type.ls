@@ -316,7 +316,8 @@
           [ required-member-name, required-type-token ] = token / ':'
 
           unless (camel-case required-member-name) in member-names
-            throw ""
+
+            throw type-error "Object #{ value-as-string object } is missing required member '#{ required-member-name }' as per descriptor #{ value-as-string descriptor }"
 
           continue if required-type-token is '?'
 
